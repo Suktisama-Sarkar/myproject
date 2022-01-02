@@ -1,0 +1,9 @@
+How to link ::
+
+1. install react-routing 
+syntax : npm install react-router-dom@5.2.0 (if already install don't install again) (version is mention as current version not matching properly)
+
+2.import { Link } from 'react-router-dom';
+3.<Link to="#"> button /link text /image </Link>
+
+**NOTE  :: "#" = page URL eg. '/home', '/about'

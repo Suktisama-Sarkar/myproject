@@ -1,0 +1,41 @@
+**Note >> Component name and Component file name should be same with "CamelCase"
+<></> = Fragmentation uses for multiple lines of code.
+
+
+To create Class component :: (Way1)
+
+import React from "react";
+
+class ComponentName extends Component{
+    constructor(){
+        super()
+
+        this.state = {}
+
+}
+
+render(){
+            return(
+                <>
+	Type your code..................
+</>
+)
+}
+export default ComponentName;
+
+==================================================================
+
+To create Class component :: (Way2)
+
+
+export default class ComponentName extends Component{
+    render(){
+        return(
+            <>
+            Type your code..................
+            </>
+        )
+    }
+}
+
+

@@ -1,0 +1,15 @@
+How to insert image directly in react::
+
+1. public folder > create image folder > keep images
+2. component file > <img src={'foldername/imagename.jpg'} alt="First slide"/>
+
+
+How to inser image from src folder ::
+
+1. import imgaeVariableName  from '../../assets/images/imagename.jpg';
+2. <img src={imgaeVariableName} alt="FB"/>
+
+
+                            
+                            
+

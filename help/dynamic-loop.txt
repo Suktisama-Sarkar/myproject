@@ -1,0 +1,63 @@
+Create static arrayset ::
+
+bannerArray : [
+                {
+                    id : 1,
+                    title : "banner1",
+                    desc : 'Description1',
+                    bannerimg : 'banner-1.jpg',
+                },
+                {
+                    id : 2,
+                    title : "banner2",
+                    desc : 'Description2',
+                    bannerimg : 'banner-2.jpg',
+                }
+            ]
+
+**NOTE : 'bannerArray' is main array data. Every '{}' inside 'bannerArray' are individual OBJECT. Inside this object we write data with 'KEY : VALUE' eg. title : "banner1",
+====================================================
+How to create arrayset in class component::
+
+In 'this.state' we create arrayset 
+
+syntax : constructor(){
+        super()
+
+        this.state = {
+            bannerArray : [
+                {
+                    id : 1,
+                    title : "banner1",
+                    desc : 'Description1',
+                    bannerimg : 'banner-1.jpg',
+                },
+                {
+                    id : 2,
+                    title : "banner2",
+                    desc : 'Description2',
+                    bannerimg : 'banner-2.jpg',
+                }
+            ]
+        }        
+    }
+
+Use loop in JSX section::
+
+{
+                        this.state.bannerArray.map((banner) => {
+                            return <div key={banner.id}>
+                            <img
+                            className=""                            
+                            src={'publicImageFolderName/' + banner.bannerimg}
+                            alt="First slide"
+                            />                            
+                            <h3>{banner.title}</h3>
+                            <p>{banner.desc}</p>                            
+                        </div>
+                        })
+                    }
+
+
+**NOTE :: this.state.bannerArray.map((banner) = 'banner' = single variable for creating loop.
+	  key={banner.id} = index number of loop.

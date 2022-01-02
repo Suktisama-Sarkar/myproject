@@ -1,0 +1,35 @@
+**Note >> Component name and Component file name should be same with "CamelCase"
+<></> = Fragmentation uses for multiple lines of code.
+
+To create default functional component ::
+
+import React from "react";
+
+function ComponentName() {
+return(
+<>
+Type your code......
+
+</>
+
+)
+
+}
+
+export default ComponentName;
+
+===============================================
+
+To create functional component using "Arrow Function"::
+
+import React from "react";
+
+const ComponentName = () => {
+    return(
+            <>	
+Type your code......
+	
+	  </>
+	)
+	}
+export default ComponentName;

@@ -1,0 +1,45 @@
+Install react routing ::
+
+VS Code terminal > npm install react-router-dom@5.2.0 
+
+
+How to apply react routing in project::
+1. open app.js
+app.js > import { BrowserRouter as Router, NavLink, Switch, Route } from "react-router-dom";   
+
+function App() {
+  return (
+    <>
+      <Router>
+      <nav>
+                <ul>
+                    <li>
+                        <NavLink exact activeClassName="active" to="/">Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink activeClassName="active" to="/about">About</NavLink>
+                    </li>
+                </ul>
+            </nav>
+      <br/>
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+      <br />      
+      </Router>
+    </>
+  );
+}
+
+
+**NOTE::>
+<Router></Router>  = is use for control full routing process.
+<NavLink> = Use for menu link.
+<Switch> = use for switch between component from menu
+<Route> =  use for link Menu Item name eg.(home, about) with compoment. "path" uses for define URL name. For linking specific component we use component tag inside route tag.
+Syntax :; <Route path="/about"> <About /> </Route>

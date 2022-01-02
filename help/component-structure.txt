@@ -1,0 +1,16 @@
+Basic structure for app.js ::
+ **Note :: App.js is our parent component. In this file we import common compoments of the project eg. "Header", "Footer" etc....
+
+To import component in app.js::
+
+import ComponentName from "./ComponentName";
+
+Syntax::>  import Header from "./components/header/Header"; 
+
+
+To import common CSS file::
+
+import './style.css';
+
+
+
