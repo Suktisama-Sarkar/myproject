@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
+import DemoApi from "./pages/demoApi/DemoApi";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -16,9 +17,13 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
+        <Route path="/api">
+          <DemoApi />
+        </Route>
         <Route path="/">
           <Home />
         </Route>
+        
       </Switch>
       <br />
       <Footer />

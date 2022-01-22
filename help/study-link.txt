@@ -1,0 +1,18 @@
+Node.js MySQL Insert into Table::
+
+https://www.geeksforgeeks.org/node-js-mysql-insert-into-table/
+https://www.w3schools.com/nodejs/nodejs_mysql_insert.asp
+
+=========================================================================
+
+Updating a record in MySQL using NodeJS::
+
+https://www.tutorialspoint.com/updating-a-record-in-mysql-using-nodejs
+
+=====================================================
+
+How to connect Node.js with React.js ?
+
+https://www.geeksforgeeks.org/how-to-connect-node-js-with-react-js/
+
+https://medium.com/zero-equals-false/how-to-connect-a-react-frontend-with-node-js-bccb1fb7e2bb
